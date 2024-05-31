@@ -1,15 +1,15 @@
 
 # Installation of build package and copy data to a dirctory 
-# Build stage
-FROM  maven:3.5-jdk-8-alpine AS build
+# # Build stage
+# FROM  maven:3.8.7-openjdk-18-slim AS build
 
-WORKDIR /app
+# WORKDIR /app
 
-COPY src /app/src
+# COPY src /app/src
 
-COPY pom.xml /app
+# COPY pom.xml /app
 
-RUN mvn -f /app/pom.xml clean package
+# RUN mvn -f /app/pom.xml clean package
 
 
 # Package stage
